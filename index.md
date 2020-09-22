@@ -22,18 +22,18 @@
 # [관련 이미지 & 동영상]
 - 이미지 
 <br><br>
-![Game_"Dungreed"](./img/ex1.jpg){: width="1280" height="720"}
+![Game_"Dungreed"](./img/ex1.jpg)
 <br><br>
-![Game_"Enter the gungeon"](./img/ex2.png){: width="1280" height="720"}
+![Game_"Enter the gungeon"](./img/ex2.png)
 <br><br><br>
 - 동영상
 <br><br>
-[![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI){: width="1280" height="720"}
+[![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI)
 
 
 <br><br><br>
 # [대표 이미지]
-![대표이미지](./img/main_img.png){: width="1280" height="720"}
+![대표이미지](./img/main_img.png)
 
 > ### 대표이미지 기반 : 게임은 탑뷰형식의 2D RPG 장르입니다.
 
@@ -41,7 +41,7 @@
 
 > 추가 설명 그림
 
-![대표이미지(설명추가)](./img/main_img(text).png){: width="1280" height="720"}
+![대표이미지(설명추가)](./img/main_img(text).png)
 
 
 
