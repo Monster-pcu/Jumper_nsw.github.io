@@ -22,18 +22,18 @@
 # [관련 이미지 & 동영상]
 - 이미지 
 <br><br>
-![Game_"Dungreed"](./img/ex1.jpg)
+![Game_"Dungreed"](./img/ex1.jpg){: width="1280" height="720"}
 <br><br>
-![Game_"Enter the gungeon"](./img/ex2.png)
+![Game_"Enter the gungeon"](./img/ex2.png){: width="1280" height="720"}
 <br><br><br>
 - 동영상
 <br><br>
-[![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI)
+[![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI){: width="1280" height="720"}
 
 
 <br><br><br>
 # [대표 이미지]
-![대표이미지](./img/main_img.png)
+![대표이미지](./img/main_img.png){: width="1280" height="720"}
 
 > ### 대표이미지 기반 : 게임은 탑뷰형식의 2D RPG 장르입니다.
 
@@ -41,7 +41,7 @@
 
 > 추가 설명 그림
 
-![대표이미지(설명추가)](./img/main_img(text).png)
+![대표이미지(설명추가)](./img/main_img(text).png){: width="1280" height="720"}
 
 
 
@@ -51,9 +51,9 @@
 
 ## 1. 메커니즘
 
->-  도전 과제
->1) 캐릭터의 체력이 소진되기 전에 몬스터를 처치하라.
->2) 게임 내 존재하는 다양한 몬스터를 토벌하라.
+>- 도전 과제
+>1. 캐릭터의 체력이 소진되기 전에 몬스터를 처치하라.
+>2. 게임 내 존재하는 다양한 몬스터를 토벌하라.
 
 >- 재미 요소
 >1. 다양한 몬스터와 다양한 전투를 펼친다.
