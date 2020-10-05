@@ -89,3 +89,213 @@
 
 ## 4. 기술  
 Unity Engine(2019.4.9f1_win) 사용
+
+<br><br><br>
+# [ <strong>게임 시스템 디자인</strong> ]
+
+## 1. 게임 오브젝트 분해 (구성 요소 분석)
+
+|  <center>연번</center> |  <center>오브젝트 이름</center> |  <center>오브젝트 이미지</center> |
+|:--------:|:--------:|:--------:|
+|**1** | <center>캐릭터<br>(플레이어) </center> |<img src="./img/mainCharacter8.png" width="200" /><img src="./img/mainCharacter9.png" width="200" /> |
+|**2** | <center>베이스 캠프<br>(플레이어 홈) </center> |<img src="./img/baseCamp_img.jpg" width="400" /> |
+|**3** | <center>필드<br>(월드) </center> |<img src="./img/field_img.jpg" width="400" /><br><img src="./img/world2_img.jpg" width="400" /> |
+|**4** | <center>캐릭터 무기</center> |<img src="./img/weapon1_img.png" width="100" /><img src="./img/weapon2_img.png" width="100" height="150" /><img src="./img/weapon3_img.png" width="190" height="170" />|
+|**5** | <center>몬스터</center> |<img src="./img/monster_img.jpg" width="160" /><img src="./img/monster2_img.png" width="100"  /><img src="./img/monster3_img.png" width="90" /> |
+|**6** | <center>네임드 몬스터</center> |<img src="./img/boss_img.png" width="400" /> |
+
+<br><br>
+
+## 2. 파라미터(속성) 뽑아 보기
+
+<br>
+
+### 1) 오브젝트 이름: 캐릭터 (플레이어)
+
+|  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+|<center>체력</center> | <center>100</center> | <center>캐릭터가 몬스터에게 피격 시 일정량의 체력 손실.0에 도달했을때 플레이어 사망. 체력 최대값을 증가시키는 방법( 아이템 등)이 있음.<center>|<center></center> |
+|<center>방어력</center> | <center>10</center> |<center>캐릭터가 몬스터에게 피격 시 방어력에 따라 체력 손실값이 다름. 몬스터마다 요구되는 방어력값이 존재. 몬스터가 요구하는 방어력에 미달시 그 몬스터에게 피격 시 체력 손실이 부족한 방어력 값에 따라 최대 1.5배까지 증가.</center> |<center></center> |
+|<center>공격력</center> | <center>10</center> |<center>캐릭터가 몬스터를 타격 시 공격력에 따라 몬스터의 체력 손실값이 다름. 공격력은 아이템 능력치에 따른 증가가 있음.</center> |<center></center> |
+|<center>이동속도</center> | <center>10</center> |<center>캐릭터가 이동할 때의 속력값. 장착한 무기와 아이템에 따라 이동속도가 증가하거나 감소할 수 있음.</center> |<center></center> |
+|<center>상태이상</center> | <center></center> |<center>캐릭터가 가질 수 있는 상태이상. 캐릭터가 사용하는 기술, 아이템에 따라 캐릭터의 상태이상이 추가 될 수 있음. 몬스터의 특정 패턴에 피격 시 주어지는 상태이상이 있음. 종류로는 무적, 기절, 독(DOT damage) 등이 있음.</center> |<center></center> |
+|<center>스테이터스</center> | <center></center> |<center>필드를 일정구역 탐험하게되면 캐릭터 능력치에 투자할 수 있는 스테이터스 제공. 캐릭터의 체력, 방어력, 공격력에 투자 가능함.</center> |<center>*미확정*</center> |
+| <center></center> |<center></center> |<center></center> |<center></center> |
+
+<br>
+
+### 2) 오브젝트 이름: 베이스 캠프 (플레이어 홈)
+
+|  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>무기고</center> |<center></center> |<center>캐릭터가 베이스 캠프에서 상호작용 할 수 있는 객체. 무기고는 캐릭터가 수집한 무기를 나열함. 무기고에서 캐릭터가 착용하고 있는 무기를 해제, 원하는 무기로 교체, 장착 할 수 있음.</center> |<center></center> |
+| <center>창고</center> |<center></center> |<center>캐릭터가 베이스 캠프에서 상호작용 할 수 있는 객체. 창고는 캐릭터가 수집한 아이템들을 나열함. 창고에서 캐릭터가 착용하고 있는 아이템을 해제, 원하는 아이템으로 교체, 장착 할 수 있음. </center> |<center></center> |
+
+<br>
+
+### 3) 오브젝트 이름: 필드 (월드)
+
+|  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>지형</center> |<center></center> |<center>캐릭터가 월드에서 이동 가능한 곳. 지형에 따라 캐릭터의 이동속도의 변화(이동속도 저하 등)가 생길 수 있다. </center> |<center>*흙, 모래, 진흙*</center> |
+| <center>장애물</center> |<center></center> |<center>캐릭터가 이동할 수 없는 지형. 장애물은 캐릭터가 통과 하지 못함.</center> |<center>*바위, 나무, 수풀*</center> |
+
+<br>
+
+### 4) 오브젝트 이름: 캐릭터 무기
+
+|  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>종류</center> |<center></center> |<center>무기의 종류. 단검, 한손검, 두손검, 도끼, 창, 레이피어 등</center> |<center></center> |
+| <center>무기 공격력</center> |<center>5</center> |<center>무기가 가지는 공격력. 무기의 종류에 따라, 가치에 따라 다른 무기 공격력을 보유. 캐릭터의 공격력 상승에 기여. </center> |<center>*무기에 따라 다름*</center> |
+| <center>공격 속도</center> |<center>1 - 4</center> |<center>무기가 가지는 공격 속도. 무기의 종류에 따라, 가치에 따라 다른 공격 속도를 보유. 1단계부터 4단계까지 단계별로 캐릭터가 분당 공격할 수 있는 횟수가 증가.</center> |<center>*"*</center> |
+| <center>공격 범위</center> |<center></center> |<center>무기가 타격할 수 있는 범위. 무기의 종류에 따라, 가치에 따라 다른 범위를 보유. 공격 범위는 무기의 종류에 큰 영향을 받음. </center> |<center>*"*</center> |
+| <center>가치</center> |<center>1 - 5</center> |<center>무기가 갖고 있는 가치. 가치의 수치가 높을 수록 그만큼 영향력이 높은(가치가 낮은 무기보다 공격력, 공격속도, 공격범위가 우월함.) 무기. </center> |<center>*"*</center> |
+| <center>무기 기술</center> |<center></center> |<center>무기의 종류에 따라 무기가 갖고 있는 기술.</center> |<center>*"*</center> |
+| <center>무기 변수</center> |<center>1 - 5</center> |<center>무기의 종류에 따라 무기가 갖고 있는 변수. 캐릭터가 몬스터 에게 주는 데미지 값에 영향을 줌.</center> |<center>*수치가 높을수록 데미지값의 편차가 심해짐*</center> |
+
+<br>
+
+### 5) 오브젝트 이름: 몬스터
+
+|  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>체력</center> |<center>100</center> |<center>몬스터가 캐릭터에게 피격 시 일정량의 체력 손실. 0에 도달했을때 몬스터 사망. 몬스터에 따라 갖고 있는 체력값이 다름.</center> |<center>*몬스터에 따라 다름*</center> |
+| <center>공격력</center> |<center>10</center> |<center>몬스터가 캐릭터를 타격 시 공격력에 따라 캐릭터의 체력 손실값이 다름. 몬스터에 따라 갖고 있는 공격력값이 다름.</center> |<center>*"*</center> |
+| <center>이동속도</center> |<center>5</center> |<center>몬스터가가 이동할 때의 속력값. </center> |<center>*"*</center> |
+| <center>몬스터<br>기술(행동)</center> |<center></center> |<center>몬스터가 갖는 고유의 기술 또는 행동. 캐릭터를 타격 하는 기술, 캐릭터를 방해하는 기술 등.</center> |<center>*"*</center> |
+
+<br>
+
+### 6) 오브젝트 이름: 네임드 몬스터
+
+|  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>체력</center> |<center></center> |<center>몬스터가 캐릭터에게 피격 시 일정량의 체력 손실. 0에 도달했을때 몬스터 사망. 몬스터에 따라 갖고 있는 체력값이 다름.</center> |<center>*몬스터에 따라 다름*</center> |
+| <center>공격력</center> |<center></center> |<center>몬스터가 캐릭터를 타격 시 공격력에 따라 캐릭터의 체력 손실값이 다름. 몬스터에 따라 갖고 있는 공격력값이 다름.</center> |<center>*"*</center> |
+| <center>이동속도</center> |<center></center> |<center>몬스터가가 이동할 때의 속력값. </center> |<center>*"*</center> |
+| <center>몬스터<br>기술(행동)</center> |<center></center> |<center>몬스터가 갖는 고유의 기술 또는 행동. 캐릭터를 타격 하는 기술, 캐릭터를 방해하는 기술 등.</center> |<center>*"*</center> |
+| <center>방어구<br>관통력</center> |<center></center> |<center>몬스터가 캐릭터를 타격 시 캐릭터가 갖고 있는 방어력이 몬스터가 갖고 있는 방어구 관통력값보다 낮을 때, 캐릭터의 체력 손실 값이 증가.</center> |<center>*몬스터 방어구 관통력 공식 참고*</center> |
+
+<br><br>
+
+## 3. 행동 뽑아 보기
+
+### 1) 오브젝트 이름: 캐릭터 (플레이어)
+
+|  <center>행동</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|
+| <center>이동</center> |<center>캐릭터는 이동이 가능한 지형 위에서 상하좌우 이동이 가능함.</center> |<center></center> |
+| <center>공격</center> |<center>캐릭터는 공격이 가능한 상태에서 원하는 방향으로 공격이 가능함.</center> |<center></center> |
+| <center>기술 시전</center> |<center>캐릭터는 공격이 가능한 상태에서 원하는 방향으로 기술을 시전 가능함.</center> |<center>*무기에 따라 시전할 수 있는 기술이다름*</center> |
+| <center>상호작용</center> |<center>캐릭터는 상호작용이 가능한 오브젝트 주위에서 오브젝트와 상호작용이 가능함.</center> |<center></center> |
+
+<br>
+
+### 2) 오브젝트 이름: 몬스터 (네임드 몬스터)
+
+|  <center>행동</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|
+| <center>이동</center> |<center>몬스터는 이동이 가능한 지형 위에서 상하좌우 이동이 가능함.</center> |<center>*이동이 가능한 몬스터에 한에서*</center> |
+| <center>공격</center> |<center>몬스터는 공격이 가능한 상태에서 캐릭터 방면으로 공격 행위를 함.</center> |<center></center> |
+| <center>기술(행동) 시전</center> |<center>몬스터는 공격이 가능한 상태에서 캐릭터 방면으로 기술을 시전하거나 캐릭터를 방해하는 행동을 보임.</center> |<center>*기술(행동) 시전이 가능한 몬스터에 한에서*</center> |
+
+<br><br>
+
+## 4. 상태 뽑아 보기
+
+<br>
+
+### 1) 오브젝트 이름: 캐릭터 (플레이어)
+
+|  <center>현 상태</center> |  <center>전이 상태</center> |  <center>조건</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>일반 상태</center> |<center>피격 상태</center> |<center>캐릭터가 몬스터에게 피격 당한 상태. 피격 후 1초간 피격당하지 않음.</center> |<center></center> |
+| <center>일반 상태</center> |<center>기절 상태</center> |<center>캐릭터가 몬스터에게 특정 기술(행동)로 피격 당했을 때 캐릭터의 움직임이 마비되고 공격 행동을 할 수 없는 기절 상태로 전환. 몬스터의 기술(행동)에 따라 기절 시간은 상이함. 기절 시간이 지난 후 캐릭터는 일반 상태로 전환.</center> |<center></center> |
+| <center>일반 상태</center> |<center>중독 상태</center> |<center>캐릭터가 몬스터에게 특정 기술(행동)로 피격 당했을 때 캐릭터가 독데미지를 입는 상태 추가. 일정 시간동안 일정 간격으로 피해를 입하고 중독 시간이 지난 후 중독 상태 해제.</center> |<center></center> |
+| <center>일반 상태</center> |<center>무적 상태</center> |<center>캐릭터가 특정 아이템 혹은 기술 시전시 무적 상태로 전환. 사용한 아이템, 기술에 따라 무적 시간은 상이함. 무적 상태일 시 몬스터에게 피격당하지 않음.</center> |<center></center> |
+| <center>일반 상태</center> |<center>사망 상태</center> |<center>캐릭터가 피격 후 체력을 모두 소진했을 때 사망 상태로 전환. 캐릭터는 동작하지 못하며 플레이어는 사망 후 출력되는 UI를 통해 게임 조작 가능.</center> |<center></center> |
+
+<br>
+
+### 2) 오브젝트 이름: 몬스터 (네임드 몬스터)
+
+|  <center>현 상태</center> |  <center>전이 상태</center> |  <center>조건</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>일반 상태</center> |<center>피격 상태</center> |<center>몬스터가 캐릭터에게 피격 당한 상태.</center> |<center></center> |
+| <center>일반 상태</center> |<center>기절 상태</center> |<center>몬스터가 캐릭터에게 특정 기술로 피격 당했을 때 몬스터의 움직임이 마비되고 공격 행동을 할 수 없는 기절 상태로 전환. 캐릭터의 기술(행동)에 따라 기절 시간은 상이함. 기절 시간이 지난 후 몬스터는 일반 상태로 전환.</center> |<center>*효과가 없는 몬스터가 존재함.*</center> |
+| <center>일반 상태</center> |<center>중독 상태</center> |<center>몬스터가 캐릭터에게 특정 기술로 피격 당했을 때 몬스터가 독데미지를 입는 상태 추가. 일정 시간동안 일정 간격으로 피해를 입하고 중독 시간이 지난 후 중독 상태 해제.</center> |<center>*효과가 없는 몬스터가 존재함.*</center> |
+| <center>일반 상태</center> |<center>기술(행동)시전 상태</center> |<center>몬스터가 기술(행동)을 시전 하는 상태. </center> |<center></center> |
+| <center>일반 상태</center> |<center>사망 상태</center> |<center>몬스터가 피격후 체력을 모두 소진했을 때 사망 상태로 전환.</center> |<center></center> |
+| <center></center> |<center></center> |<center></center> |<center></center> |
+
+<br><br>
+
+## 5. 플레이어 캐릭터 속성 (파라미터)
+
+|  <center>속성</center> |  <center>영문 명칭</center> |  <center>설명</center> |  <center>비고</center> |
+|:--------:|:--------:|:--------:|:--------:|
+| <center>체력</center> |<center>hitPont</center> |<center>캐릭터가 갖고 있는 현재 체력을 나타내는 속성. 최대 체력을 초과하여 값을 가질 수 없음.</center> |<center></center> |
+| <center>최대 체력</center> |<center>maxHitPoint</center> |<center>캐릭터가 가질 수 있는 체력의 최대값.</center> |<center></center> |
+| <center>공격력</center> |<center>attackPower</center> |<center>공격력 값은 적에게 데미지를 줄 때 영향을 미침.</center> |<center></center> |
+| <center>방어력</center> |<center>defenseValue</center> |<center>방어력 값은 적에게 데미지를 받을 때 영향을 미침.</center> |<center>*몬스터 방어구 관통력 공식 참고*</center> |
+| <center>이동 속도</center> |<center>speedValue</center> |<center>이동 속도 값은 캐릭터의 이동 속도에 영향을 미침.</center> |<center></center> |
+| <center>데미지</center> |<center>cha_damageValue</center> |<center>캐릭터의 공격력과 캐릭터가 착용한 무기의 무기 공격력, 무기 변수가 모두 고려되어 책정되는 값. 몬스터를 타격 시 몬스터의 체력을 소모 시키는 값.</center> |<center>*캐릭터 데미지 공식 참고*</center> |
+
+<br><br>
+
+## 6. 게임의 규칙
+<br>
+
+### 1) 핵심 규칙
+>- 플레이어는 주어진 필드내에 있는 몬스터를 처치한다.
+>- 몬스터를 처치 후 주어지는 보상으로 난이도가 있는 월드에 도전한다.
+### 2) 보조 규칙
+>- 난이도가 높아질수록 캐릭터의 공격력, 방어력, 체력 등이 더 높은 수치를 필요로 한다.
+>- 난이도가 높아질수록 몬스터는 더 높은 공격력, 방어구관통력, 체력 등을 소유하고 있다. 그만큼 난이도가 높은 몬스터를 처지시 더 나은 보상을 캐릭터에게 제공한다. 
+
+<br><br>
+
+## 7. 게임에서 사용될 공식
+
+> 1. 몬스터 방어구 관통력 공식
+>
+> 캐릭터의 방어력 = A     몬스터의 방어구 관통력 = B
+>
+> A < ( B - 5 ) = DAMAGE * 2.0 <br>
+> A > ( B - 5 ) && A < B = DAMAGE * 1.2 <br>
+> A > B && A < ( B + 5 ) = DAMAGE * 1.0 <br>
+> A > (B + 5) = DAMAGE * 0.9 <br>
+>
+> 예시) 몬스터 A의 방어구 관통력 값이 10일 때 <br>
+> 캐릭터의 방어력이 5미만이면 데미지 2배 <br>
+캐릭터의 방어력이 5이상 10미만이면 데미지 1.2배 <br>
+캐릭터의 방어력이 10이상 15미만이면 데미지 1배 <br>
+캐릭터의 방어력이 15이상이면 데미지 0.9배 <br><br>
+
+> 2. 캐릭터 데미지 공식
+> 
+> 캐릭터 공격력과 무기 공격력을 더한 값을 무기 변수 값의 범위 내에서 곱하여 데미지값 산출. <br>
+> 무기 변수 값은 1부터 5까지 존재. <br>
+
+|  <center>무기 변수</center> |  <center>범위</center> |
+|:--------:|:--------:|
+|<center>1</center> | <center>0.95~1.05</center> |
+|<center>2</center> | <center>0.90~1.10</center> |
+|<center>3</center> | <center>0.85~1.15</center> |
+|<center>4</center> | <center>0.80~1.20</center> |
+|<center>5</center> | <center>0.75~1.25</center> |
+
+> 최소 데미지 <br>
+> ( 캐릭터 공격력 + 무기 공격력 ) * 무기 변수 범위 최솟값
+> <br>
+> 최대 데미지 <br>
+> ( 캐릭터 공격력 + 무기 공격력 ) * 무기 변수 범위 최댓값 <br>
+> <br>
+> 예시 1) 캐릭터의 공격력이 10, 무기 공격력이 5, 무기 변수값이 2일때 <br>
+> 최소 데미지 : ( 10 + 5 ) * 0.9 = 13.5 <br>
+> 최대 데미지 : ( 10 + 5 ) * 1.1 = 16.5 <br>
+> <br>
+> 예시 2) 캐릭터의 공격력이 100, 무기 공격력이 80, 무기 변수값이 5일때 <br>
+> 최소 데미지 : ( 100 + 80 ) * 0.75 = 135 <br>
+> 최대 데미지 : ( 100 + 80 ) * 1.25 = 225 <br>
