@@ -137,8 +137,8 @@ Unity Engine(2019.4.9f1_win) 사용
 
 |  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
 |:--------:|:--------:|:--------:|:--------:|
-| <center>지형</center> |<center></center> |<center>캐릭터가 월드에서 이동 가능한 곳. 지형에 따라 캐릭터의 이동속도의 변화(이동속도 저하 등)가 생길 수 있다. </center> |<center>*흙, 모래, 진흙*</center> |
-| <center>장애물</center> |<center></center> |<center>캐릭터가 이동할 수 없는 지형. 장애물은 캐릭터가 통과 하지 못함.</center> |<center>*바위, 나무, 수풀*</center> |
+| <center>지형</center> |<center></center> |<center>캐릭터가 월드에서 이동 가능한 곳. 지형에 따라 캐릭터의 이동속도의 변화(이동속도 저하 등)가 생길 수 있다. </center> |<center>_흙, 모래, 진흙_</center> |
+| <center>장애물</center> |<center></center> |<center>캐릭터가 이동할 수 없는 지형. 장애물은 캐릭터가 통과 하지 못함.</center> |<center>_바위, 나무, 수풀_</center> |
 
 <br>
 
