@@ -119,7 +119,7 @@ Unity Engine(2019.4.9f1_win) 사용
 |<center>공격력</center> | <center>10</center> |<center>캐릭터가 몬스터를 타격 시 공격력에 따라 몬스터의 체력 손실값이 다름. 공격력은 아이템 능력치에 따른 증가가 있음.</center> |<center></center> |
 |<center>이동속도</center> | <center>10</center> |<center>캐릭터가 이동할 때의 속력값. 장착한 무기와 아이템에 따라 이동속도가 증가하거나 감소할 수 있음.</center> |<center></center> |
 |<center>상태이상</center> | <center></center> |<center>캐릭터가 가질 수 있는 상태이상. 캐릭터가 사용하는 기술, 아이템에 따라 캐릭터의 상태이상이 추가 될 수 있음. 몬스터의 특정 패턴에 피격 시 주어지는 상태이상이 있음. 종류로는 무적, 기절, 독(DOT damage) 등이 있음.</center> |<center></center> |
-|<center>스테이터스</center> | <center></center> |<center>필드를 일정구역 탐험하게되면 캐릭터 능력치에 투자할 수 있는 스테이터스 제공. 캐릭터의 체력, 방어력, 공격력에 투자 가능함.</center> |<center>*미확정*</center> |
+|<center>스테이터스</center> | <center></center> |<center>필드를 일정구역 탐험하게되면 캐릭터 능력치에 투자할 수 있는 스테이터스 제공. 캐릭터의 체력, 방어력, 공격력에 투자 가능함.</center> |<center>_미확정_</center> |
 | <center></center> |<center></center> |<center></center> |<center></center> |
 
 <br>
