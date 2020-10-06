@@ -119,7 +119,7 @@ Unity Engine(2019.4.9f1_win) 사용
 |<center>공격력</center> | <center>10</center> |<center>캐릭터가 몬스터를 타격 시 공격력에 따라 몬스터의 체력 손실값이 다름. 공격력은 아이템 능력치에 따른 증가가 있음.</center> |<center></center> |
 |<center>이동속도</center> | <center>10</center> |<center>캐릭터가 이동할 때의 속력값. 장착한 무기와 아이템에 따라 이동속도가 증가하거나 감소할 수 있음.</center> |<center></center> |
 |<center>상태이상</center> | <center></center> |<center>캐릭터가 가질 수 있는 상태이상. 캐릭터가 사용하는 기술, 아이템에 따라 캐릭터의 상태이상이 추가 될 수 있음. 몬스터의 특정 패턴에 피격 시 주어지는 상태이상이 있음. 종류로는 무적, 기절, 독(DOT damage) 등이 있음.</center> |<center></center> |
-|<center>스테이터스</center> | <center></center> |<center>필드를 일정구역 탐험하게되면 캐릭터 능력치에 투자할 수 있는 스테이터스 제공. 캐릭터의 체력, 방어력, 공격력에 투자 가능함.</center> |<center>_미확정_</center> |
+|<center>스테이터스</center> | <center></center> |<center>필드를 일정구역 탐험하게되면 캐릭터 능력치에 투자할 수 있는 스테이터스 제공. 캐릭터의 체력, 방어력, 공격력에 투자 가능함.</center> |<center>_미확정_  </center> |
 | <center></center> |<center></center> |<center></center> |<center></center> |
 
 <br>
@@ -137,8 +137,8 @@ Unity Engine(2019.4.9f1_win) 사용
 
 |  <center>속성</center> |  <center>속성값</center> |  <center>설명</center> |  <center>비고</center> |
 |:--------:|:--------:|:--------:|:--------:|
-| <center>지형</center> |<center></center> |<center>캐릭터가 월드에서 이동 가능한 곳. 지형에 따라 캐릭터의 이동속도의 변화(이동속도 저하 등)가 생길 수 있다. </center> |<center>_흙, 모래, 진흙_</center> |
-| <center>장애물</center> |<center></center> |<center>캐릭터가 이동할 수 없는 지형. 장애물은 캐릭터가 통과 하지 못함.</center> |<center>_바위, 나무, 수풀_</center> |
+| <center>지형</center> |<center></center> |<center>캐릭터가 월드에서 이동 가능한 곳. 지형에 따라 캐릭터의 이동속도의 변화(이동속도 저하 등)가 생길 수 있다. </center> |<center>_흙, 모래, 진흙_  </center> |
+| <center>장애물</center> |<center></center> |<center>캐릭터가 이동할 수 없는 지형. 장애물은 캐릭터가 통과 하지 못함.</center> |<center>_바위, 나무, 수풀_  </center> |
 
 <br>
 
@@ -227,7 +227,6 @@ Unity Engine(2019.4.9f1_win) 사용
 | <center>일반 상태</center> |<center>중독 상태</center> |<center>몬스터가 캐릭터에게 특정 기술로 피격 당했을 때 몬스터가 독데미지를 입는 상태 추가. 일정 시간동안 일정 간격으로 피해를 입하고 중독 시간이 지난 후 중독 상태 해제.</center> |<center>*효과가 없는 몬스터가 존재함.*</center> |
 | <center>일반 상태</center> |<center>기술(행동)시전 상태</center> |<center>몬스터가 기술(행동)을 시전 하는 상태. </center> |<center></center> |
 | <center>일반 상태</center> |<center>사망 상태</center> |<center>몬스터가 피격후 체력을 모두 소진했을 때 사망 상태로 전환.</center> |<center></center> |
-| <center></center> |<center></center> |<center></center> |<center></center> |
 
 <br><br>
 
