@@ -42,13 +42,13 @@
 # [관련 이미지 & 동영상]
 - 이미지 
 <br><br>
-<img src="./img/ex1.png" width="1000" />
+<img src="./img/ex1.jpg" width="1000" />
 <br><br>
 <img src="./img/ex2.png" width="1000" />
 <br><br><br>
 - 동영상
 <br><br>
-[![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI)
+![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI)
 
 
 *********************
