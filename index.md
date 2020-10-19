@@ -42,9 +42,9 @@
 # [관련 이미지 & 동영상]
 - 이미지 
 <br><br>
-![Game_"Dungreed"](./img/ex1.jpg)
+<img src="./img/ex1.png" width="1000" />
 <br><br>
-![Game_"Enter the gungeon"](./img/ex2.png)
+<img src="./img/ex2.png" width="1000" />
 <br><br><br>
 - 동영상
 <br><br>
@@ -55,7 +55,8 @@
 <br><br><br>
 
 # [대표 이미지]
-![대표이미지](./img/main_img.png)
+
+<img src="./img/main_img.png" width="1000" />
 
 <br>
 
@@ -65,7 +66,7 @@
 
 <br>
 
-![대표이미지(설명추가)](./img/main_img(text).png)
+<img src="./img/main_img(text).png" width="1000" />
 
 
 *********************
