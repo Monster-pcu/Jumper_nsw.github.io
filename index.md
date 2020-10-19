@@ -48,7 +48,9 @@
 <br><br><br>
 - 동영상
 <br><br>
-![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI)
+
+[![Game_"Enter the gungeon"의 플레이 영상](./img/ex3.jpg)](https://www.youtube.com/watch?v=7bLWV9-ihmI)
+
 
 
 *********************
