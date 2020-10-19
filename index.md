@@ -409,7 +409,7 @@ Unity Engine(2019.4.9f1_win) 사용<br>
 
 ## 키보드 이벤트에 대한 흐름도
 
-<img src="./img/keyEvent.png" width="800" />
+<img src="./img/keyEvent.png" width="1000" />
 
 <br><br>
 
@@ -476,4 +476,4 @@ Unity Engine(2019.4.9f1_win) 사용<br>
 
 # [<strong>개발작업 일정(6주)</strong>]
 
-<img src="./img/Plan.png" width="800" />
+<img src="./img/Plan.png" width="1000" />
