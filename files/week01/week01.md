@@ -24,7 +24,7 @@
 
 <br>
 
-## 영상
+## 개발 자료
 
 <img src="./files/week01/week01.gif" width="1000" />
 
