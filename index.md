@@ -22,12 +22,12 @@
 <br><br>
 
 # [개발 진행도]<br>
-#### [1주차 개발계획](https://monster-pcu.github.io/files/w01/week01.md)<br>
-#### [2주차 개발계획](https://monster-pcu.github.io/files/w02/week02.md)<br>
-#### [3주차 개발계획](https://monster-pcu.github.io/files/w03/week03.md)<br>
-#### [4주차 개발계획](https://monster-pcu.github.io/files/w04/week04.md)<br>
-#### [5주차 개발계획](https://monster-pcu.github.io/files/w05/week05.md)<br>
-#### [6주차 개발계획](https://monster-pcu.github.io/files/w06/week06.md)<br>
+#### [1주차 개발계획](https://monster-pcu.github.io/files/w01/week01)<br>
+#### [2주차 개발계획](https://monster-pcu.github.io/files/w02/week02)<br>
+#### [3주차 개발계획](https://monster-pcu.github.io/files/w03/week03)<br>
+#### [4주차 개발계획](https://monster-pcu.github.io/files/w04/week04)<br>
+#### [5주차 개발계획](https://monster-pcu.github.io/files/w05/week05)<br>
+#### [6주차 개발계획](https://monster-pcu.github.io/files/w06/week06)<br>
 
 ****************
 
