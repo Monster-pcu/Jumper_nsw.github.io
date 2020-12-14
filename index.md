@@ -22,7 +22,7 @@
 <br><br>
 
 # [개발 진행도]<br>
-#### [1주차 개발계획](#https---monster-pcu-github-io-files-w01-week01-md)<br>
+#### [1주차 개발계획](https://monster-pcu.github.io/files/w01/week01.md)<br>
 #### [2주차 진행도](#2주차-진행도)<br>
 #### [3주차 진행도](#3주차-진행도)<br>
 #### [4주차 진행도](#4주차-진행도)<br>
