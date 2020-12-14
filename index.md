@@ -23,11 +23,11 @@
 
 # [개발 진행도]<br>
 #### [1주차 개발계획](https://monster-pcu.github.io/files/w01/week01.md)<br>
-#### [2주차 진행도](#2주차-진행도)<br>
-#### [3주차 진행도](#3주차-진행도)<br>
-#### [4주차 진행도](#4주차-진행도)<br>
-#### [5주차 진행도](#5주차-진행도)<br>
-#### [6주차 진행도](#6주차-진행도)<br>
+#### [2주차 개발계획](https://monster-pcu.github.io/files/w02/week02.md)<br>
+#### [3주차 개발계획](https://monster-pcu.github.io/files/w03/week03.md)<br>
+#### [4주차 개발계획](https://monster-pcu.github.io/files/w04/week04.md)<br>
+#### [5주차 개발계획](https://monster-pcu.github.io/files/w05/week05.md)<br>
+#### [6주차 개발계획](https://monster-pcu.github.io/files/w06/week06.md)<br>
 
 ****************
 
