@@ -495,17 +495,17 @@ Unity Engine(2019.4.9f1_win) 사용<br>
 
 <br><br>
 
-## 1주차 진행도
+## [1주차 개발계획](https://monster-pcu.github.io/files/w01/week01)<br>
 
-## 2주차 진행도
+## [2주차 개발계획](https://monster-pcu.github.io/files/w02/week02)<br>
 
-## 3주차 진행도
+## [3주차 개발계획](https://monster-pcu.github.io/files/w03/week03)<br>
 
-## 4주차 진행도
+## [4주차 개발계획](https://monster-pcu.github.io/files/w04/week04)<br>
 
-## 5주차 진행도
+## [5주차 개발계획](https://monster-pcu.github.io/files/w05/week05)<br>
 
-## 6주차 진행도
+## [6주차 개발계획](https://monster-pcu.github.io/files/w06/week06)<br>
 
 <br><br><br><br><br><br>
 
